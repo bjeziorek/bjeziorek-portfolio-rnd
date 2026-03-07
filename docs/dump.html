@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cognitive dump example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="page">
+    <main class="shell">
+      <div class="shell-inner">
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+          <a href="../index.html">Main</a>
+          <span>/</span>
+          <span class="current">Cognitive dump example</span>
+        </nav>
+
+        <!-- Eyebrow -->
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Cognitive dump</span>
+        </div>
+
+        <!-- Main Heading -->
+        <h1>Cognitive dump for Croatian project</h1>
+
+        <!-- Subtitle -->
+        <p >
+
+         Before I formalise anything, I run a rapid, unfiltered modelling phase — a full‑stack sweep across system dynamics, user cognition, behavioural friction, and hypothesis space. It’s messy on purpose: this is where patterns surface, contradictions reveal themselves, and the architecture of the solution emerges long before refinement.
+        </p>
+        <p>This particular modelling phase was completed across two sessions — a 12‑hour deep‑focus block followed by a 2‑hour continuation the next day. That pattern is intentional: when I encounter a new, complex problem, the first day is an intensive, high‑compression cycle; the second day is deliberately lighter, because the cognitive system needs recovery before it can enter another long modelling session. Subsequent phases stabilise into normal 6–8 hour blocks. This rhythm applies to individual clients; when working with companies I stay within standard hours, but I still need some flexibility to preserve the quality of the modelling. What follows is the unfiltered output of that initial process, captured before any refinement or formal structuring.</p>
+
+        <!-- Context -->
+        <section>
+
+          <h2>Client requirement</h2>
+          <p>
+            A tool for learning Croatian, for a user who already has partial knowledge of the language,
+            but wants to reach C1 level.
+          </p>
+
+          <h2>Notes</h2>
+          <p>
+            The research team (yeah… one‑person team) does not know Croatian.
+          </p>
+
+          <h2>Research question</h2>
+          <p>
+            This question exists so both the client and the research team know what we’re actually
+            investigating and what the target outcome is.
+          </p>
+          <p>
+            What exactly is missing for this person to reach the level they want — what would they like
+            to be able to say/understand in this language that they currently cannot?
+          </p>
+
+          <h2>Spontaneous operational questions</h2>
+          <p>
+            These are the questions my brain generated automatically while parsing the problem.
+          </p>
+          <ul>
+            <li>
+              How do you measure proficiency in someone who learned the language as a 4‑year‑old,
+              absorbed a lot as a child, but as an adult has zero exposure?
+            </li>
+            <li>How do you assess her needs?</li>
+            <li>
+              How do you compare her level to C1 when formal tests don’t reflect reality for someone
+              with such uneven, informal learning?
+            </li>
+            <li>What tool or tool‑set could be used?</li>
+            <li>
+              Would a learning framework be valuable as the “spine” that organizes such a tool‑set?
+            </li>
+            <li>What are the limitations of the research team and how do we bypass them?</li>
+          </ul>
+
+          <h2>1. System grounding</h2>
+
+          <h3>a. User</h3>
+          <ul>
+            <li>Adult — adult learning processes differ from child learning.</li>
+            <li>Uneven knowledge of the language → impossible to measure with standard methods.</li>
+            <li>Cannot find tools (courses, books) that match her needs.</li>
+            <li>Unstructured learning cycle.</li>
+            <li>Working person with limited time and patience for formal study.</li>
+            <li>Not fully sure what she needs.</li>
+            <li>Irregular daily schedule due to work.</li>
+          </ul>
+
+          <h3>b. Research team</h3>
+          <ul>
+            <li>
+              The project team does not know Croatian, but has experience with AI‑heuristic‑based tools
+              for learning Japanese, where the lead researcher had prior exposure.
+            </li>
+            <li>
+              The research team has limited capacity for building dedicated prototypes, let alone
+              end‑to‑end tools. The project budget does not allow that.
+            </li>
+            <li>
+              The realistic target is: design a dedicated framework + adapt existing tools + repurpose
+              tools for unintended use‑cases.
+            </li>
+            <li>
+              Requires very close collaboration with the client and precise methods for measuring
+              solution fit, so the team can later refine the tool‑set and the part of the framework
+              responsible for selecting materials and methods once the client is on her own.
+            </li>
+            <li>
+              This is necessary for progress and for the solution’s long‑term self‑sufficiency.
+            </li>
+          </ul>
+
+          <h3>c. Environment</h3>
+          <ul>
+            <li>Environment with zero Croatian exposure.</li>
+            <li>
+              Croatian is in the category of “it would be cool to know it someday”, but never becomes a
+              life priority.
+            </li>
+          </ul>
+
+          <h2>2. Cognitive modeling</h2>
+          <p>
+            User modelling was computed using CIR (regulatory stability axis) + FEDRI (agent‑based
+            simulation engine), both running in mid‑res in my head.
+          </p>
+          <p>
+            The user has subjective, ambition‑based motivation to learn this language. Data from
+            previous projects (factor: lead researcher’s experience) and knowledge about human cognition
+            indicate that such a user quickly loses:
+          </p>
+          <ul>
+            <li>motivation</li>
+            <li>sense of direction</li>
+            <li>sense of progress</li>
+            <li>sense of achievability</li>
+            <li>sense of meaning</li>
+            <li>belief that they will ever reach the goal</li>
+          </ul>
+
+          <p>
+            The model flagged several elements that require iterative returns to the previous step
+            (System grounding). It adds operational questions and insights (chronologically, as they
+            appeared):
+          </p>
+
+          <ul>
+            <li>What influences the user’s motivation?</li>
+            <li>What gives them a sense of direction, and what removes it?</li>
+            <li>How can progress be measured and feedback delivered?</li>
+            <li>
+              Insight: If the user had their own goals, those goals could become the structure for
+              measuring progress and could form the backbone of the framework. (This is where the MAKO
+              framework fits — motivation, activation, control, ownership.)
+            </li>
+            <li>Do the goals need to be linear?</li>
+            <li>How do you measure progress if goals are non‑linear and ad‑hoc?</li>
+            <li>What happens if goals are not linear, unlike textbooks, courses, and apps?</li>
+            <li>Would some form of tracker be useful, and what properties would it need?</li>
+            <li>What influences the sense of achievability?</li>
+            <li>What influences the sense of meaning?</li>
+            <li>What influences belief in success?</li>
+          </ul>
+
+          <p>
+            At this point, the process can move to step 3: Behavioral friction mapping, while still
+            iterating on the cognitive model (steps 2 and 3 run in parallel).
+          </p>
+          <h2>3. Behavioural friction mapping</h2>
+          <p>
+            The client comes home after work tired, demotivated, and unwilling to engage in anything with a high
+            activation threshold. Typical behaviours include watching TV, reading, scrolling social media, gaming,
+            spending time with friends or family, wandering around the house, doing sports, or walking the dog.
+          </p>
+
+          <h3>Insights</h3>
+
+          <p><strong>Insight:</strong> We need to ask the client what they actually do after coming home and what their
+            schedule looks like. Also: what their hobbies are, what they naturally sit down to, and what they enjoy
+            enough to do even when tired.</p>
+
+          <p><strong>Insight:</strong> One tool could be using the language while doing something else (e.g., reading
+            recipes in the target language if cooking is their hobby). This won’t always integrate well, but a targeted
+            interview should produce a list for further analysis or inspiration.</p>
+
+          <p><strong>Insight:</strong> Another tool could be thinking in the target language during everyday activities.
+            Missing vocabulary should be written down (in the user’s native language) and later used to generate
+            personalised materials and goals. This corresponds to the O in MAKO (ownership) and K (control), which then
+            feeds into motivation and activation.</p>
+
+          <p>
+            Motivation increases when something is interesting and doesn’t require forcing oneself. It also increases
+            when something is easy and short — it doesn’t have to be interesting, just simple, quick, and easy to tick
+            off, which closes the dopamine loop.
+          </p>
+
+          <p><strong>Insight:</strong> Combine “interesting tools” with “easy materials”.</p>
+
+          <p>
+            A sense of direction appears when the user sees a map and a list of steps to follow, especially steps in a
+            sequence.
+          </p>
+
+          <p><strong>Insight:</strong> Some form of map will be needed.</p>
+
+          <p><strong>Insight:</strong> Mapping the entire foreign language — especially the missing parts — when we
+            cannot measure the current level is impossible. It will require a different approach, e.g., meta‑mapping.
+          </p>
+
+          <p>
+            <strong>Insight:</strong> If we base goal‑framing on the user’s interests (which are unpredictable but can
+            often be narrowed down to domains), the structure will naturally be non‑linear. That means it cannot be
+            forced into a linear sequence of steps — but linearity is needed for a sense of progress.
+          </p>
+
+          <ul>
+            <li>linearity → needed for progress perception</li>
+            <li>spontaneity → needed for motivation, but inherently non‑linear</li>
+          </ul>
+
+          <p>
+            This suggests using the MAZE framework (Multinarrative • Adaptive • Zoomable • Extensible). MAZE,
+            implemented as a non‑linear tracker, can map goals graph‑fractally and multi‑layered while still providing
+            direction and control, resolving the contradiction.
+          </p>
+
+          <h3>Research hypothesis</h3>
+          <p>
+            A well‑designed goal system + a matching tracker will positively influence the sense of achievability, sense
+            of meaning, and belief in success.
+          </p>
+
+          <p><strong>Insight:</strong> To measure progress and deliver feedback, a dedicated tool will be needed — one
+            that interacts with the user and corrects errors. This is the hardest part to achieve, but also the most
+            important for solution quality.</p>
+
+          <h3>Notes for mixed‑methods integration</h3>
+          <ul>
+            <li>Ask the user to show the learning materials they currently use for analysis.</li>
+            <li>Ask the user for permission to observe them while learning.</li>
+            <li>Ask the user to keep a learning journal.</li>
+          </ul>
+
+          <h2>4. Hypothesis Architecture</h2>
+          <p>
+            <strong>Hypothesis:</strong> A framework is needed that is intrinsic‑motivation‑driven — meaning it
+            self‑generates direction and goals based on natural motivation, without forcing the user. Such an approach
+            requires handling the fractal way in which this kind of data is generated.
+          </p>
+
+          <p>
+            The MAZE framework should be used here, ideally in the form of a narrative calendar. At this stage there is
+            no clear use for the “one‑day chaos calendar”, but it may become relevant if cognitive overload becomes
+            significant.
+          </p>
+
+          <p>
+            User‑generated data will be used to generate synthetic, personalised data tailored to the user’s individual
+            needs.
+          </p>
+
+
+          <h2>Preliminary framework structure</h2>
+
+          <h3>1. Mapping motivational levers</h3>
+          <p>
+            The user maps areas where intrinsic motivation appears — interests, intriguing topics, work‑related domains,
+            and anything they naturally gravitate toward, especially after work when tired.
+          </p>
+          <p>
+            The user can already generate data needed later for synthetic data generation — for example, writing down
+            that they want to be able to use the structure “considering that…” in their speech because they feel they
+            want to know it. That subjective pull represents motivation.
+          </p>
+
+          <h3>2. Putting the levers into a branching calendar</h3>
+          <p>
+            The user enters the motivational levers into the calendar according to MAZE usage guidelines.
+          </p>
+          <p>
+            Since MAZE is still only a framework and lacks a fully standardised methodology (especially the calendar
+            component), the researcher must observe how the calendar is being filled out and provide fast, frequent
+            feedback to correct it — while simultaneously refining the rules so they can later be formalised.
+          </p>
+
+          <h3>3. Generating data for generating synthetic data</h3>
+          <p>
+            The second area involves observing what the user frequently says in their native language and identifying
+            what they lack to say the same thing in Croatian. They write down missing words or phrases in their native
+            language and store them. This continues throughout the entire project.
+          </p>
+          <p>
+            Every identified gap becomes a building block toward reaching C1.
+          </p>
+          <p>
+            The user takes any text related to their interests (from memory, a journal entry, a thought, anything
+            interesting at the moment) and attempts to translate it into Croatian without a dictionary. Wherever there
+            is a gap, they write the missing word in their native language and mark it.
+          </p>
+          <p>
+            They stop translating once approximately 20 gaps appear. Prior research suggests that ~20 is optimal, though
+            this remains a hypothesis.
+          </p>
+
+          <h3>4. Generating dedicated synthetic data</h3>
+          <p>
+            The user runs the text through AI with a prompt instructing it to:
+          </p>
+          <ul>
+            <li>extract missing words and generate a translation list,</li>
+            <li>extract grammatical errors and generate a list of grammar gaps,</li>
+            <li>explain collocations and grammar.</li>
+          </ul>
+          <p>
+            The user copies and stores all of this.
+          </p>
+          <p>
+            Then they ask AI to generate a list of Polish sentences to translate into Croatian. The user translates
+            them; AI checks. The user repeats until bored or tired. They mark progress in the narrative calendar.
+          </p>
+
+          <h3>Main hypothesis</h3>
+          <p>
+            An intrinsic‑motivation‑driven framework + MAZE will allow the user to generate goals naturally and
+            effortlessly.
+          </p>
+
+          <h3>Alternative hypothesis</h3>
+          <p>
+            If intrinsic motivation is not enough, low‑threshold micro‑actions will maintain continuity and generate
+            data for further modelling.
+          </p>
+
+          <h3>Boundary‑condition hypothesis</h3>
+          <p>
+            If MAZE does not work (possible, since it is still in testing), the framework will be iterated until a
+            working configuration is found — or until further iteration exceeds the project budget.
+          </p>
+
+          <h2>5. Mixed‑Methods Integration</h2>
+
+          <h3>What needs to be investigated?</h3>
+          <ul>
+            <li>Attempt to assess the user’s current level of Croatian — descriptive, not B1/B2. Parameters for
+              assessment need to be designed.</li>
+            <li>Define how partial and final progress will be measured to determine whether the intervention is
+              effective.</li>
+            <li>Evaluate the usefulness of the narrative calendar, how it is used, and whether this usage pattern is
+              beneficial.</li>
+          </ul>
+
+          <h3>Quantitative data to collect</h3>
+          <ul>
+            <li>AI‑graded task results</li>
+            <li>Frequency and count of calendar usage</li>
+          </ul>
+
+          <h3>Qualitative data to collect</h3>
+          <ul>
+            <li>Calendar entries</li>
+            <li>Methodology journal (filled according to a template)</li>
+            <li>Surveys</li>
+            <li>A/B tests of the calendar</li>
+          </ul>
+
+          <h3>Behavioural data to collect</h3>
+          <ul>
+            <li>Methodology journal</li>
+            <li>Surveys</li>
+          </ul>
+
+          <h3>Environmental data to collect</h3>
+          <ul>
+            <li>Methodology journal</li>
+            <li>Surveys</li>
+          </ul>
+
+          <p>(Integration of data will be added later — too early to write this part.)</p>
+
+          <h2>6. Systemic Implementation</h2>
+
+          <h3>a. Input‑level assessment through synthetic materials</h3>
+          <p>
+            Based on the analysis of all courses, apps, textbooks, and other materials the client has used — plus their
+            commentary — a set of synthetic diagnostic materials will be prepared to measure entry‑level knowledge.
+          </p>
+          <p>
+            This provides an initial map of gaps, which will be used to choose directions and prompt‑sets for generating
+            personalised synthetic learning data via AI.
+          </p>
+          <p>
+            The diagnostic includes:
+          </p>
+          <ul>
+            <li>reading synthetic Croatian text without a dictionary,</li>
+            <li>marking all unknown words and constructions,</li>
+            <li>writing a short description of what the text was about.</li>
+          </ul>
+          <p>
+            There will be 5–7 texts on different topics and domains, each around half an A4 page (some longer). Some
+            test knowledge from previous materials; others probe C1‑level skills.
+          </p>
+          <p>
+            The marked materials, commentary, and survey are collected by the researcher. The same materials will be
+            used for the exit‑level assessment after one month. Partial weekly tests may be added if needed.
+          </p>
+
+          <h3>b. Prompt‑set and AI workflow</h3>
+          <p>
+            The client receives a set of prompts created based on diagnostic data, plus instructions for working with
+            AI.
+          </p>
+          <p>
+            The researcher may test the tool on themselves in parallel (e.g., learning French) to anticipate issues and
+            refine the workflow.
+          </p>
+
+          <h3>c. Journal + MAZE calendar</h3>
+          <p>
+            Together with the prompt‑set, the client receives:
+          </p>
+          <ul>
+            <li>a structured journal template,</li>
+            <li>instructions for filling it out,</li>
+            <li>a MAZE‑based calendar.</li>
+          </ul>
+          <p>
+            MAZE is originally designed for neurodivergent users, but its applicability here is strong because language
+            learning produces cognitive overload similar to ND sensory overload.
+          </p>
+
+          <h3>d. Weekly contact + iterative refinement</h3>
+          <p>
+            There will be at least weekly contact to collect research data. The client may also reach out anytime with
+            questions or ideas.
+          </p>
+          <p>
+            After each week, all tools are evaluated and improved versions deployed for the next week.
+          </p>
+
+          <h3>e. One‑month evaluation</h3>
+          <p>
+            After one month, the client’s level is assessed again using the entry‑diagnostic materials (possibly
+            expanded).
+          </p>
+          <p>
+            This evaluation determines whether:
+          </p>
+          <ul>
+            <li>one month of iteration is sufficient,</li>
+            <li>the product requires further refinement,</li>
+            <li>or the entire strategy needs to be changed if initial assumptions fail.</li>
+          </ul>
+          <p>
+            Weekly evaluations cannot determine strategic correctness — only tool‑level adjustments. After a month,
+            strategic usefulness becomes measurable.
+          </p>
+
+          <p><strong>Insight:</strong> A journal template will be needed — something iterative.</p>
+
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

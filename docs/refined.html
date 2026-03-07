@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Refined document example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="page">
+    <main class="shell">
+      <div class="shell-inner">
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+          <a href="../index.html">Main</a>
+          <span>/</span>
+          <span class="current">Refined document example</span>
+        </nav>
+
+        <!-- Eyebrow -->
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Refined document</span>
+        </div>
+        <section>
+          <h1>Croatian Learning System — R&amp;D Architecture (Refined Document)</h1>
+
+          <h2>1. Problem Definition</h2>
+          <p>
+            The client has partial, uneven knowledge of Croatian acquired in early childhood, with no exposure in
+            adulthood.
+            Standard language learning tools do not match her profile, and formal proficiency tests cannot accurately
+            place her level.
+            The goal is to design a system that enables her to reach functional C1 proficiency through personalised,
+            motivation driven,
+            synthetic data supported learning.
+          </p>
+
+          <h3>Context</h3>
+          <ul>
+            <li>Learned Croatian informally as a child; knowledge is fragmented and inconsistent.</li>
+            <li>Zero current exposure; no natural reinforcement.</li>
+            <li>Adult learner with limited time, irregular schedule, and low tolerance for high activation tasks.</li>
+            <li>Motivation is ambition based and fragile under cognitive load.</li>
+          </ul>
+
+          <h3>Constraints</h3>
+          <ul>
+            <li>Research team does not know Croatian.</li>
+            <li>No budget for custom tool development.</li>
+            <li>Must rely on frameworks, adaptive workflows, and repurposed tools.</li>
+            <li>Must design a system that becomes self sustaining for the user.</li>
+          </ul>
+
+          <h3>Unknowns</h3>
+          <ul>
+            <li>Actual current proficiency (cannot be measured with standard tests).</li>
+            <li>What the user wants to be able to say/understand that she currently cannot.</li>
+            <li>Which motivational levers are stable enough to anchor long term progress.</li>
+          </ul>
+
+          <h3>Target Outcome</h3>
+          <p>A personalised, self sustaining learning system that:</p>
+          <ul>
+            <li>generates goals from intrinsic motivation,</li>
+            <li>produces synthetic learning materials tailored to the user,</li>
+            <li>tracks progress non linearly,</li>
+            <li>and enables the user to reach C1 level functional competence.</li>
+          </ul>
+
+          <h2>2. System Model</h2>
+
+          <h3>System Map</h3>
+          <p>The learning system consists of:</p>
+          <ul>
+            <li>the user (cognitive, motivational, behavioural layers),</li>
+            <li>the environment (zero exposure, irregular schedule),</li>
+            <li>the research framework (SPINE + MAKO + MAZE),</li>
+            <li>the synthetic data pipeline,</li>
+            <li>the tracking and feedback loop.</li>
+          </ul>
+
+          <h3>Actors</h3>
+          <ul>
+            <li>User: adult learner with uneven prior knowledge.</li>
+            <li>Researcher: designs frameworks, interprets data, refines tools.</li>
+            <li>AI systems: generate synthetic materials, evaluate tasks, provide feedback.</li>
+          </ul>
+
+          <h3>Environment</h3>
+          <ul>
+            <li>No natural Croatian input.</li>
+            <li>Competing low activation behaviours (TV, scrolling, gaming).</li>
+            <li>Learning is optional, not survival relevant → low priority.</li>
+          </ul>
+
+          <h3>Constraints as Design Inputs</h3>
+          <ul>
+            <li>Low activation threshold → micro actions required.</li>
+            <li>Irregular schedule → asynchronous, flexible system.</li>
+            <li>No exposure → synthetic data must replace natural input.</li>
+            <li>Uneven knowledge → non linear mapping required.</li>
+          </ul>
+
+          <h2>3. Cognitive Model</h2>
+
+          <h3>Motivational Architecture</h3>
+          <p>The user’s motivation is:</p>
+          <ul>
+            <li>intrinsic but unstable,</li>
+            <li>interest driven,</li>
+            <li>sensitive to cognitive load,</li>
+            <li>easily disrupted by lack of direction or visible progress.</li>
+          </ul>
+
+          <h3>Cognitive Constraints</h3>
+          <p>The user quickly loses:</p>
+          <ul>
+            <li>motivation,</li>
+            <li>sense of direction,</li>
+            <li>sense of progress,</li>
+            <li>sense of achievability,</li>
+            <li>sense of meaning,</li>
+            <li>belief in eventual success.</li>
+          </ul>
+
+          <h3>Behavioural Patterns</h3>
+          <p>After work, the user defaults to:</p>
+          <ul>
+            <li>passive consumption,</li>
+            <li>low effort activities,</li>
+            <li>familiar routines.</li>
+          </ul>
+
+          <h3>Predictive Modelling</h3>
+          <p>Motivation increases when:</p>
+          <ul>
+            <li>tasks are interesting,</li>
+            <li>tasks are short and easy,</li>
+            <li>progress is visible,</li>
+            <li>goals feel self generated.</li>
+          </ul>
+          <p>MAKO (Motivation, Activation, Control, Ownership) is the backbone for stabilising these dynamics.</p>
+
+          <h2>4. Behavioural Friction Map</h2>
+
+          <h3>Activation Friction</h3>
+          <ul>
+            <li>High effort tasks fail after work.</li>
+            <li>Need for low threshold micro actions.</li>
+          </ul>
+
+          <h3>Direction Friction</h3>
+          <ul>
+            <li>No clear map of what to learn next.</li>
+            <li>Standard curricula do not match uneven knowledge.</li>
+          </ul>
+
+          <h3>Progress Friction</h3>
+          <ul>
+            <li>Non linear gaps make progress invisible.</li>
+            <li>Need for a tracker that works with non linearity.</li>
+          </ul>
+
+          <h3>Meaning Friction</h3>
+          <ul>
+            <li>Tasks must connect to personal interests.</li>
+            <li>Synthetic data must feel relevant.</li>
+          </ul>
+
+          <h3>Opportunity Points</h3>
+          <ul>
+            <li>Thinking in Croatian during daily activities.</li>
+            <li>Using Croatian in hobbies (recipes, reading, etc.).</li>
+            <li>Capturing missing vocabulary in real time.</li>
+          </ul>
+
+          <h2>5. Hypothesis Architecture</h2>
+
+          <h3>Primary Hypothesis</h3>
+          <p>
+            An intrinsic motivation driven framework combined with MAZE will enable the user to generate goals naturally
+            and maintain long term engagement.
+          </p>
+
+          <h3>Alternative Hypothesis</h3>
+          <p>
+            If intrinsic motivation is insufficient, low threshold micro actions will maintain continuity and generate
+            enough
+            data for further modelling.
+          </p>
+
+          <h3>Boundary Condition Hypothesis</h3>
+          <p>
+            If MAZE fails (possible due to its experimental nature), the framework will be iterated until a stable
+            configuration
+            emerges or until iteration exceeds project budget.
+          </p>
+
+          <h3>Assumptions</h3>
+          <ul>
+            <li>The user can reliably capture missing vocabulary.</li>
+            <li>Synthetic data can approximate natural exposure.</li>
+            <li>Motivation can be stabilised through structure and feedback.</li>
+          </ul>
+
+          <h2>6. Framework Design</h2>
+
+          <h3>Frameworks Used</h3>
+          <ul>
+            <li>SPINE — overall research backbone.</li>
+            <li>MAKO — motivational architecture.</li>
+            <li>MAZE — non linear goal tracking and narrative calendar.</li>
+            <li>CIR + FEDRI — cognitive modelling and agent based simulation.</li>
+          </ul>
+
+          <h3>Why These Frameworks</h3>
+          <ul>
+            <li>SPINE structures the research cycle.</li>
+            <li>MAKO stabilises motivation.</li>
+            <li>MAZE resolves the contradiction between non linear interests and the need for linear progress.</li>
+            <li>CIR + FEDRI model user cognition and behavioural patterns.</li>
+          </ul>
+
+          <h3>Framework Interaction</h3>
+          <ul>
+            <li>MAKO identifies motivational levers.</li>
+            <li>MAZE organises them into a branching, zoomable calendar.</li>
+            <li>SPINE guides iteration and refinement.</li>
+            <li>Synthetic data pipeline feeds the system with personalised materials.</li>
+          </ul>
+
+          <h2>7. Implementation Plan</h2>
+
+          <h3>Phase 1 — Motivational Mapping</h3>
+          <ul>
+            <li>Identify intrinsic motivational levers.</li>
+            <li>Capture interests, domains, and linguistic desires (“I want to say X”).</li>
+            <li>Begin collecting missing vocabulary.</li>
+          </ul>
+
+          <h3>Phase 2 — Branching Calendar (MAZE)</h3>
+          <ul>
+            <li>Insert motivational levers into MAZE.</li>
+            <li>Researcher observes and corrects early usage.</li>
+            <li>Calendar rules refined iteratively.</li>
+          </ul>
+
+          <h3>Phase 3 — Synthetic Data Generation</h3>
+          <ul>
+            <li>User attempts translations from memory.</li>
+            <li>Gaps captured (~20 per session).</li>
+            <li>
+              AI generates:
+              <ul>
+                <li>translation lists,</li>
+                <li>grammar gap lists,</li>
+                <li>collocation explanations.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Phase 4 — Practice Loop</h3>
+          <ul>
+            <li>AI generates Polish → Croatian sentences.</li>
+            <li>User translates; AI checks.</li>
+            <li>Progress marked in MAZE.</li>
+          </ul>
+
+          <h3>Phase 5 — Weekly Iteration</h3>
+          <ul>
+            <li>Researcher evaluates tools, data, and user behaviour.</li>
+            <li>Deploys improved versions weekly.</li>
+          </ul>
+
+          <h3>Phase 6 — One Month Evaluation</h3>
+          <ul>
+            <li>Re run diagnostic materials.</li>
+            <li>Compare entry vs. exit level.</li>
+            <li>
+              Decide whether:
+              <ul>
+                <li>strategy is correct,</li>
+                <li>refinement is needed,</li>
+                <li>or assumptions failed.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>8. Evaluation Plan</h2>
+
+          <h3>Quantitative Metrics</h3>
+          <ul>
+            <li>AI graded task results.</li>
+            <li>Frequency of calendar usage.</li>
+            <li>Number of gaps captured.</li>
+            <li>Number of synthetic tasks completed.</li>
+          </ul>
+
+          <h3>Qualitative Metrics</h3>
+          <ul>
+            <li>Calendar entries.</li>
+            <li>Methodology journal.</li>
+            <li>Surveys.</li>
+            <li>A/B tests of calendar formats.</li>
+          </ul>
+
+          <h3>Behavioural Metrics</h3>
+          <ul>
+            <li>Activation patterns.</li>
+            <li>Task completion patterns.</li>
+            <li>Cognitive load indicators.</li>
+          </ul>
+
+          <h3>Environmental Metrics</h3>
+          <ul>
+            <li>Context of learning sessions.</li>
+            <li>Competing behaviours.</li>
+          </ul>
+
+          <h3>Success Criteria</h3>
+          <ul>
+            <li>Increased sense of direction.</li>
+            <li>Increased sense of progress.</li>
+            <li>Increased belief in achievability.</li>
+            <li>Stable or rising motivation.</li>
+            <li>Measurable linguistic improvement.</li>
+          </ul>
+
+          <h2>9. Risks &amp; Mitigations</h2>
+
+          <h3>Cognitive Risks</h3>
+          <ul>
+            <li>Overload → mitigated by micro actions and MAZE.</li>
+            <li>Loss of motivation → mitigated by MAKO.</li>
+          </ul>
+
+          <h3>Behavioural Risks</h3>
+          <ul>
+            <li>Irregular schedule → asynchronous system.</li>
+            <li>Low activation → ultra low threshold tasks.</li>
+          </ul>
+
+          <h3>Systemic Risks</h3>
+          <ul>
+            <li>No natural exposure → synthetic data pipeline.</li>
+            <li>Uneven knowledge → non linear mapping.</li>
+          </ul>
+
+          <h3>Operational Risks</h3>
+          <ul>
+            <li>Researcher does not know Croatian → AI assisted diagnostics and synthetic materials.</li>
+          </ul>
+
+          <h2>10. Next Steps</h2>
+          <ul>
+            <li>Finalise MAZE calendar rules.</li>
+            <li>Build reusable prompt sets for synthetic data generation.</li>
+            <li>Formalise diagnostic materials for entry and exit assessments.</li>
+            <li>Create a stable journal template for cognitive and behavioural tracking.</li>
+          </ul>
+
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
