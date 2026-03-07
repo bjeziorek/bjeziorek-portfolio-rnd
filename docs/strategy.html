@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Strategy Case Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="page">
+    <main class="shell">
+      <div class="shell-inner">
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+          <a href="../index.html">Main</a>
+          <span>/</span>
+          <span class="current">Product Strategy Case Study</span>
+        </nav>
+
+        <!-- Eyebrow -->
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Product Strategy Case Study</span>
+        </div>
+        <section>
+          <h1>Croatian Learning System — Product Strategy Case Study</h1>
+
+          <h2>Challenge</h2>
+          <p>
+            Design a learning system for an adult user with fragmented childhood exposure to Croatian, no current
+            immersion, and an irregular schedule.
+            Standard courses and proficiency tests fail because her knowledge is uneven and non linear.
+            The goal is to help her reach functional C1 proficiency through a personalised, motivation driven approach.
+          </p>
+
+          <h2>Context</h2>
+          <p>The user:</p>
+          <ul>
+            <li>learned Croatian informally as a child,</li>
+            <li>retained partial, inconsistent knowledge,</li>
+            <li>has no exposure in adulthood,</li>
+            <li>works full time with unpredictable hours,</li>
+            <li>loses motivation quickly when tasks feel heavy or directionless.</li>
+          </ul>
+
+          <p>The research team:</p>
+          <ul>
+            <li>does not know Croatian,</li>
+            <li>cannot build custom tools due to budget constraints,</li>
+            <li>must rely on frameworks, adaptive workflows, and AI generated synthetic data.</li>
+          </ul>
+
+          <h2>User Insights</h2>
+          <ul>
+            <li>Motivation is intrinsic but fragile; it collapses when progress is invisible.</li>
+            <li>After work, cognitive load is high; activation threshold must be extremely low.</li>
+            <li>The user gravitates toward hobbies and passive activities — these can be leveraged as learning entry
+              points.</li>
+            <li>She wants to express specific thoughts (“I want to say X in Croatian”), which can be used as
+              personalised goal seeds.</li>
+            <li>Missing vocabulary appears constantly during daily thinking; capturing it is a powerful data source.
+            </li>
+          </ul>
+
+          <h2>System Insights</h2>
+          <ul>
+            <li>Standard linear curricula fail because the user’s knowledge is non linear.</li>
+            <li>Progress must be visible even when learning paths are branching and unpredictable.</li>
+            <li>Synthetic data can replace natural exposure if generated from the user’s own interests and gaps.</li>
+            <li>A non linear tracker is required to reconcile spontaneous goals with the need for direction.</li>
+          </ul>
+
+          <h2>Opportunities</h2>
+          <ul>
+            <li>Use MAKO to stabilise motivation through ownership and control.</li>
+            <li>Use MAZE to create a branching, zoomable narrative calendar that maps non linear goals.</li>
+            <li>Use AI to generate personalised synthetic materials from the user’s captured gaps.</li>
+            <li>Use micro actions to maintain continuity on low energy days.</li>
+            <li>Use weekly iteration to refine tools and frameworks in real time.</li>
+          </ul>
+
+          <h2>Solution Architecture</h2>
+
+          <h3>1. Motivational Mapping</h3>
+          <p>
+            Identify intrinsic motivational levers: interests, domains, linguistic desires, and recurring thoughts the
+            user wants to express.
+          </p>
+
+          <h3>2. Branching Calendar (MAZE)</h3>
+          <p>
+            Insert motivational levers into a non linear, multi layered calendar that provides direction without forcing
+            linearity.
+          </p>
+
+          <h3>3. Synthetic Data Pipeline</h3>
+          <p>Generate personalised materials by:</p>
+          <ul>
+            <li>capturing missing vocabulary during daily thinking,</li>
+            <li>translating interest based texts until ~20 gaps appear,</li>
+            <li>using AI to extract vocabulary, grammar gaps, and collocations.</li>
+          </ul>
+
+          <h3>4. Practice Loop</h3>
+          <p>
+            AI generates Polish → Croatian sentences; the user translates; AI checks; progress is logged in MAZE.
+          </p>
+
+          <h3>5. Weekly Iteration</h3>
+          <p>
+            Tools, prompts, and workflows are refined weekly based on behavioural data and cognitive patterns.
+          </p>
+
+          <h3>6. One Month Evaluation</h3>
+          <p>
+            Re run diagnostic materials to measure progress, validate hypotheses, and adjust strategy.
+          </p>
+
+          <h2>Prototype / Intervention</h2>
+          <p>The intervention consists of:</p>
+          <ul>
+            <li>a MAZE based narrative calendar,</li>
+            <li>a structured learning journal,</li>
+            <li>a synthetic data generation workflow,</li>
+            <li>a personalised prompt set for AI,</li>
+            <li>weekly evaluation cycles,</li>
+            <li>entry and exit diagnostics using synthetic texts.</li>
+          </ul>
+          <p>
+            This creates a self sustaining learning ecosystem driven by the user’s own cognition and interests.
+          </p>
+
+          <h2>Expected Outcomes</h2>
+          <ul>
+            <li>Increased sense of direction through MAZE.</li>
+            <li>Increased motivation through MAKO.</li>
+            <li>Visible progress through synthetic data loops.</li>
+            <li>Reduced activation friction through micro actions.</li>
+            <li>A personalised, adaptive path toward C1 proficiency.</li>
+            <li>A stable, long term learning system the user can maintain independently.</li>
+          </ul>
+
+          <h2>What I Learned</h2>
+          <ul>
+            <li>Non linear learners require non linear tracking systems.</li>
+            <li>Synthetic data can effectively replace natural exposure when grounded in user generated content.</li>
+            <li>Motivation stabilises when users feel ownership over goals and materials.</li>
+            <li>Behavioural friction mapping is essential for designing low activation workflows.</li>
+            <li>Framework driven design (SPINE, MAKO, MAZE) enables high complexity problems to become tractable and
+              structured.</li>
+          </ul>
+
+        </section>
+
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
