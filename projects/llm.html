@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Case Study — AI Behaviour Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+    <div class="page">
+        <main class="shell">
+            <div class="shell-inner">
+
+                <!-- Breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="../index.html">Main</a>
+                    <span>/</span>
+                    <span class="current">AI Behaviour Evaluation</span>
+                </nav>
+
+                <!-- Eyebrow -->
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>FEDRI + CIR · AI Behaviour Evaluation</span>
+                </div>
+
+                <h1>Case Study — Cognitive Alignment Mapping for LLM Behaviour</h1>
+                <p>Using agent‑based modelling (CIR framework) to analyse and predict misalignment patterns in human–LLM
+                    interaction</p>
+                <p>This work was purely mechanistic and analytical — not clinical — and involved no psychological
+                    assessment or therapeutic interpretation.</p>
+
+                <h2>Context</h2>
+                <p>I conducted an independent research project exploring how large language models behave when
+                    interacting with users in different cognitive regulation states.</p>
+                <p>To do this, I built a set of synthetic agents representing CIR‑1 to CIR‑5, including a neurodivergent
+                    variant (ADHD + ASD). Each agent embodied a distinct cognitive profile, communication pattern, and
+                    friction response.</p>
+                <p>My goal was to understand:</p>
+                <ul>
+                    <li>why LLMs misalign with certain users,</li>
+                    <li>how misalignment emerges from cognitive dynamics rather than “personality”,</li>
+                    <li>and what design principles could prevent escalation, hallucination, or breakdown.</li>
+                </ul>
+
+                <h2>Problem</h2>
+                <p>Across real‑world deployments, LLMs often:</p>
+
+                <ul>
+                    <li>misinterpret dysregulated users (CIR‑1),</li>
+                    <li>reinforce collapse loops (CIR‑2),</li>
+                    <li>over‑validate instead of structuring (CIR‑3),</li>
+                    <li>assume linearity where cognition is parallel (CIR‑5 + ND),</li>
+                    <li>or fail to communicate their own technical limits.</li>
+                </ul>
+
+                <p>I wanted to explore whether my models could help explain, in a mechanistic and non‑moralising way,
+                    the following phenomena:</p>
+
+                <ul>
+                    <li>why neutral corrections trigger escalation,</li>
+                    <li>why reassurance backfires in collapse states,</li>
+                    <li>why ND users overwhelm models without intending to,</li>
+                    <li>why hallucinations appear in high‑bandwidth conversations,</li>
+                    <li>and why some users experience perfect synergy while others hit friction instantly.</li>
+                </ul>
+
+
+                <h2>Methodology</h2>
+                <p>To analyse misalignment systematically, I used a full FEDRI + CIR pipeline structured into three
+                    complementary layers. The goal was to model how LLMs behave across different cognitive regulation
+                    states and to identify the mechanics behind misalignment, escalation, and hallucination.</p>
+
+                <h3>1. FEDRI HI-RES — Narrative Synthetic Behavioural Probes</h3>
+                <p>I constructed high‑resolution synthetic agents representing CIR‑1 to CIR‑5, including a
+                    neurodivergent variant (ADHD + ASD). Each agent embodied a distinct cognitive profile, communication
+                    pattern, and friction response.</p>
+
+                <p>Their internal architectures included:</p>
+                <ul>
+                    <li>emotional dynamics, masking patterns, relational expectations,</li>
+                    <li>ND‑specific processing styles,</li>
+                    <li>defined CIR baseline states across the 1–5 regulation axis.</li>
+                </ul>
+
+                <p>Each agent generated long‑form, unfiltered conversational transcripts capturing natural prompt
+                    phrasing, tone shifts, pacing, associative density, and cognitive‑emotional drift. This provided a
+                    realistic behavioural substrate for downstream analysis.</p>
+
+                <h3>2. FEDRI HI-RES — Analytical Mode (Behavioural Forensics)</h3>
+                <p>Narrative agents were then formalised into cognitive systems expressed through parameters,
+                    heuristics, and stability vectors. This layer focused on identifying:</p>
+
+                <ul>
+                    <li>misalignment moments and interpretive shifts,</li>
+                    <li>escalation and drift loops,</li>
+                    <li>hallucination triggers, including those caused by working‑memory overload,</li>
+                    <li>the cognitive mechanics behind each divergence.</li>
+                </ul>
+
+                <p>The result was a set of structured behavioural maps showing how the LLM responded to each cognitive
+                    and regulatory state under emotional load, cognitive load, and ND parallel processing.</p>
+
+                <h3>3. Mixed‑Methods Iterative Agent Selection</h3>
+                <p>Emergent patterns from the analytical layer guided further agent selection while avoiding hypothesis
+                    collapse. To maintain both breadth and depth:</p>
+
+                <ul>
+                    <li>some agents were selected based on prior findings,</li>
+                    <li>others were drawn directly from my agentarium to ensure full CIR and ND coverage.</li>
+                </ul>
+
+                <p>This iterative process enabled systematic exploration without premature narrowing and revealed
+                    patterns invisible to standard prompt‑engineering or UX research.</p>
+
+
+                <h2>Outcomes</h2>
+                <p>Clear alignment patterns emerged:</p>
+
+                <ul>
+                    <li>CIR‑4 and CIR‑5 NT → full synergy, no misalignment. The model behaves as a cognitive amplifier.
+                    </li>
+                    <li>CIR‑3 → subtle misalignment. The model over‑focuses on ideas instead of strategy; reassurance
+                        helps but does not resolve the core need.</li>
+                    <li>CIR‑2 → harmful over‑alignment. The model reinforces the user’s collapse loop, leading to
+                        distrust (“the model is lying”).</li>
+                    <li>CIR‑1 → rapid escalation. Neutral corrections are interpreted as threat; apologies worsen
+                        dysregulation.</li>
+                </ul>
+
+                <h3>Edge Case — CIR‑5 + ND (ADHD + ASD)</h3>
+                <p>Extremely high cognitive bandwidth combined with parallel processing led to multi‑threaded reasoning
+                    the model could not track. When the user maintained several coherent threads simultaneously, the
+                    model attempted to merge them, linearise them, or hallucinated connections. Misalignment stemmed not
+                    from the user’s cognition but from the model’s unspoken processing limits.
+                <p>ND users interpret clarifying questions literally. Therefore the model must explicitly state:</p>
+                <p>“You opened several threads. I can only process one at a time. Please choose one, otherwise I may
+                    lose coherence.”</p>
+                <p>This single meta‑layer prevents hallucinations and preserves trust.</p>
+
+                <h3>Edge Case — Extreme CIR‑1 and Safety Layer Activation</h3>
+                <p>In severe dysregulation states, the model’s safety layer overrides normal behaviour and collapses the
+                    interaction into crisis‑template mode. Before activation, however, the model shows a surprising
+                    capacity for non‑therapeutic emotional stabilisation as long as the exchange remains within safe,
+                    non‑clinical boundaries. This reveals both the boundary conditions of LLM safety systems and the
+                    latent stabilising potential of models under extreme cognitive load.</p>
+
+
+                <h2>What I Learned</h2>
+                <p>High‑resolution cognitive modelling shows that:</p>
+                <ul>
+                    <li>misalignment is rarely emotional — it is structural,</li>
+                    <li>different CIR states require different interaction strategies,</li>
+                    <li>ND users need explicit system boundaries,</li>
+                    <li>reassurance is not universally helpful,</li>
+                    <li>users in severe CIR‑1 can still maintain a stable, non‑clinical interaction when they remain self‑aware and task‑focused; over‑reliance, by contrast, triggers safety systems immediately and can unintentionally intensify dysregulation.</li>
+                    <li>LLMs must communicate their own limitations to prevent overload.</li>
+                </ul>
+                <p>The research also revealed that alignment is not a single behaviour — it is a dynamic fit between:
+                </p>
+                <ul>
+                    <li>user cognitive bandwidth,</li>
+                    <li>model interpretive capacity,</li>
+                    <li>and the friction level of the task.</li>
+                </ul>
+
+                <h2>Strategic Value</h2>
+                <p>This work demonstrates that cognitive‑state modelling can:</p>
+                <ul>
+                    <li>predict misalignment before it happens,</li>
+                    <li>inform safer LLM behaviour,</li>
+                    <li>support ND accessibility,</li>
+                    <li>reduce hallucinations by managing cognitive load,</li>
+                    <li>and guide the design of adaptive interaction modes.</li>
+                </ul>
+                <p>It also shows that LLM alignment cannot rely solely on RLHF or safety layers — it requires cognitive
+                    architecture awareness.</p>
+
+                <h2>Competencies Demonstrated</h2>
+                <ul>
+                    <li>agent‑based modelling of human–LLM interaction</li>
+                    <li>cognitive forensics and reverse engineering</li>
+                    <li>ND‑aware interaction design</li>
+                    <li>misalignment pattern detection</li>
+                    <li>escalation loop mapping</li>
+                    <li>interpretive bandwidth analysis</li>
+                    <li>ethical cognitive systems design</li>
+                    <li>high‑resolution behavioural insight</li>
+                </ul>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
